@@ -1,0 +1,79 @@
+.container {
+  background-color: #121826;
+  color: #e5e7eb;
+  background-image: url("../img/Background_image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+
+  &__header {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+
+    &__title {
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #d2d5da;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__cards-container {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;     /* Permite que los elementos se ajusten en varias filas si es necesario */
+    }
+
+    &__card {
+      background-color: #212936;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 280px;
+
+      &__icon {
+        border-radius: 50%;
+        padding: 6px;
+        display: inline-block;
+
+        &--first {
+          background-color: #fceed8;
+        }
+
+        &--second {
+          background-color: #dee9fc;
+        }
+
+        &--third {
+          background-color: #fbe5e6;
+        }
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+
+      &__text {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #d2d5da;
+      }
+
+      &__img {
+        border-radius: 10px;
+      }
+    }
+  }
+}

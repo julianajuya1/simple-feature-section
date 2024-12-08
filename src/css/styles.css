@@ -1,0 +1,71 @@
+.container {
+  background-color: #121826;
+  color: #e5e7eb;
+  background-image: url("../img/Background_image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+.container__header {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+.container__header__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.container__header__text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d2d5da;
+  margin-bottom: 60px;
+}
+.container__cards-container {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .container__cards-container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+  }
+}
+.container__cards-container__card {
+  background-color: #212936;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 280px;
+}
+.container__cards-container__card__icon {
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+}
+.container__cards-container__card__icon--first {
+  background-color: #fceed8;
+}
+.container__cards-container__card__icon--second {
+  background-color: #dee9fc;
+}
+.container__cards-container__card__icon--third {
+  background-color: #fbe5e6;
+}
+.container__cards-container__card__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.container__cards-container__card__text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d2d5da;
+}
+.container__cards-container__card__img {
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
